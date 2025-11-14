@@ -3,3 +3,111 @@
     padding:0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2ch;
+    background-color: rgb(245,245,245);
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    height:100vh;
+}
+
+.icon {
+    width: 1.5rem;
+    height:1.5rem;
+    align-self: center;
+}
+
+.avatarSmall {
+    width:3rem;
+    border-radius: 25%;
+}
+
+/* HEADER */
+header {
+    background-color: rgb(245,245,245);
+    box-shadow: 15px 15px rgb(0, 0, 0);
+    grid-column: 2/3;
+}
+
+.headerTop {
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+    margin:20px 2vw 20px 2vw;
+}
+
+.searchbar {
+    display: flex;
+    gap:2vw;
+}
+
+input[type="search"]{
+    width:30vw;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(186, 193, 210);
+    height:2rem;
+    align-self: center;
+}
+
+.user {
+    display:flex;
+    justify-content: space-between;
+    gap:2vw;
+    align-items: center;
+}
+
+.headerBottom{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 2vw 20px 2vw;
+}
+
+.userWelcome{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.avatarBig {
+    width:4rem;
+    border-radius:25% ;
+}
+
+.userButtons{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2vw;
+}
+
+.userButtons > button {
+    background-color: rgb(19, 66, 147);
+    color:rgb(245,245,245);
+    padding:10px 30px;
+    border-radius: 25px;
+    border:none;
+    font-size: larger;
+    font-weight: bold;
+}
+/* MAIN */
+main {
+    background-color: rgb(186, 193, 210);
+    grid-column: 2/3;
+}
+
+
+/* SIDEBAR */
+.sidebar {
+    background-color: rgb(19, 66, 147);
+    grid-column: 1/2;
+    grid-row: 1/3
+
+}

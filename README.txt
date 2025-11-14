@@ -1,0 +1,1 @@
+Just some project to get comfy with grid and flexbox for The Odin Project.

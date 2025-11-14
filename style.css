@@ -22,6 +22,7 @@ body {
 
 .avatarSmall {
     width:3rem;
+    height:3rem;
     border-radius: 25%;
 }
 
@@ -97,17 +98,83 @@ h1 {
     font-size: larger;
     font-weight: bold;
 }
+
 /* MAIN */
 main {
     background-color: rgb(186, 193, 210);
     grid-column: 2/3;
 }
 
+.container {
+    display: grid;
+    gap:2vw;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin:2vw;
+    /* border:1px solid black; */
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.projects {
+    grid-row:1/3 ;
+}
+
+.projectsWrapper{
+    display: grid;
+    gap:2vw;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.project {
+    background-color: rgb(245,245,245);
+    border-radius: 5px;
+    border-left: 10px solid rgb(19, 66, 147);
+    padding:1.5vw;
+    height:100%;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+
+.social {
+    justify-self: right;
+}
+
+.announcementsFeed{
+    background-color: rgb(245,245,245);
+    border-radius: 5px;
+    padding:1.5vw;
+    font-size: 0.8rem;
+}
+
+.announcementsFeed > h4{
+    padding-bottom: 2px;
+}
+
+hr {
+    margin:20px 0;
+    color:rgba(19, 66, 147, 0.23)
+}
+
+.otherAvatars{
+    background-color: rgb(245,245,245);
+    border-radius: 5px;
+    padding:1.5vw;
+    display: grid;
+    gap:15px;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.otherUser{
+    display:flex;
+    gap:1.5vw;
+}
 
 /* SIDEBAR */
 .sidebar {
     background-color: rgb(19, 66, 147);
     grid-column: 1/2;
     grid-row: 1/3
-
 }
